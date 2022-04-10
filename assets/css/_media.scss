@@ -217,4 +217,12 @@
   .form-contain {
     padding: 50px 10px !important;
   }
+
+  .time .content .border-shape:nth-child(2), .time .content .border-shape:last-child, .time .content .border-shape:nth-child(3) {
+    padding: 0px 10px !important;
+  }
+
+  .time .content .border-shape:nth-child(2)::after {
+    left: 25% !important;
+  }
 }

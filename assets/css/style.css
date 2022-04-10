@@ -1629,8 +1629,8 @@ header .content .logos li img:hover {
 .sub-header {
   width: 100%;
   padding: 201px 0px 140px;
-  background: -webkit-gradient(linear, left top, left bottom, from(#6EB464), to(#388B9F));
-  background: linear-gradient(-180deg, #6EB464, #388B9F);
+  background: -webkit-gradient(linear, right top, left top, from(#6EB464), to(#388B9F));
+  background: linear-gradient(-90deg, #6EB464, #388B9F);
 }
 
 .sub-header.min-header {
@@ -1644,7 +1644,7 @@ header .content .logos li img:hover {
 .sub-header .content h1 {
   color: #fff;
   font-size: 30px;
-  font-weight: 900;
+  font-weight: 700;
   line-height: 25px;
   margin-bottom: 10px;
 }
@@ -1678,6 +1678,7 @@ header .content .logos li img:hover {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
+  margin-bottom: 20px;
 }
 
 .login .flex-data img {
@@ -1695,6 +1696,7 @@ header .content .logos li img:hover {
   font-weight: 700;
   line-height: 19px;
   margin: 0px;
+  padding-top: 6px;
 }
 
 .form-contain {
@@ -1708,6 +1710,7 @@ header .content .logos li img:hover {
 
 .form-contain .form-group {
   width: 100%;
+  margin-bottom: 20px !important;
 }
 
 .form-contain .form-group label {
@@ -1756,6 +1759,8 @@ header .content .logos li img:hover {
           padding-inline-start: 54px;
   color: #000;
   font-size: 16px;
+  -webkit-transition: all .3s linear;
+  transition: all .3s linear;
   resize: none;
   font-weight: 500;
 }
@@ -1794,6 +1799,7 @@ header .content .logos li img:hover {
 
 .form-contain .buttons-contain {
   width: 100%;
+  margin-top: 20px;
   -webkit-box-pack: center !important;
       -ms-flex-pack: center !important;
           justify-content: center !important;
@@ -1807,12 +1813,12 @@ header .content .logos li img:hover {
 
 .contact {
   width: 100%;
-  padding: 90px 0px !important;
+  padding: 90px 0px 75px !important;
 }
 
 .contact .contact-data {
   width: 100%;
-  padding: 70px 35px;
+  padding: 44px 35px;
   background: url("../images/contact.webp") center/cover no-repeat;
   border-radius: 20px;
   -webkit-box-shadow: 0px 0px 30px rgba(110, 180, 100, 0.1);
@@ -1880,8 +1886,8 @@ header .content .logos li img:hover {
 .time .content {
   width: 100%;
   padding: 50px 42px 30px 42px;
-  background: -webkit-gradient(linear, left top, left bottom, from(#6EB464), to(#388B9F));
-  background: linear-gradient(180deg, #6EB464, #388B9F);
+  background: -webkit-gradient(linear, right top, left top, from(#6EB464), to(#388B9F));
+  background: linear-gradient(-90deg, #6EB464, #388B9F);
   border-radius: 0px 60px 0px 60px;
   margin-top: -80px;
   position: relative;
@@ -1990,7 +1996,7 @@ header .content .logos li img:hover {
 }
 
 .time .content .data.box {
-  width: 60%;
+  width: 80%;
   margin: auto !important;
 }
 
@@ -2019,12 +2025,21 @@ header .content .logos li img:hover {
   height: 100%;
   background-color: rgba(255, 255, 255, 0.7);
   top: 0%;
-  left: -20px;
+  left: -40px;
   z-index: -1;
 }
 
 .time .content .border-shape:nth-child(3)::after, .time .content .border-shape:last-child::after {
   display: none;
+}
+
+.time .content .border-shape:nth-child(2)::after {
+  left: -20px !important;
+}
+
+.time .content .border-shape:nth-child(2), .time .content .border-shape:last-child, .time .content .border-shape:nth-child(3) {
+  -webkit-padding-start: 70px;
+          padding-inline-start: 70px;
 }
 
 .time.footer-time .content {
@@ -2111,6 +2126,7 @@ header .content .logos li img:hover {
 
 .objectives .box {
   width: 100%;
+  height: 100%;
   padding: 17px 27px 50px;
   background-color: #fff;
   border-radius: 0px 20px 20px;
@@ -2269,14 +2285,23 @@ header .content .logos li img:hover {
 
 .care .flex-box .content .name {
   margin: 0px;
-  width: -webkit-fit-content;
-  width: -moz-fit-content;
-  width: fit-content;
-  padding: 15px 28px;
+  width: 150px;
+  height: 50px;
   background-color: #388B9F;
   color: #fff;
   font-size: 16px;
   font-weight: 500;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -ms-flex-line-pack: center;
+      align-content: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
   border-radius: 0px 25px;
 }
 
@@ -2350,15 +2375,24 @@ header .content .logos li img:hover {
 
 .care .box .content .name {
   margin: 0px;
-  width: -webkit-fit-content;
-  width: -moz-fit-content;
-  width: fit-content;
-  padding: 15px 28px;
+  width: 150px;
+  height: 50px;
   background-color: #6EB464;
   color: #fff;
   font-size: 16px;
   font-weight: 500;
   border-radius: 0px 25px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -ms-flex-line-pack: center;
+      align-content: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
   margin-top: -30px;
 }
 
@@ -2392,6 +2426,10 @@ header .content .logos li img:hover {
   padding-bottom: 70px;
 }
 
+.talk .heading {
+  margin-bottom: 60px !important;
+}
+
 .talk .owl-stage-outer {
   padding: 20px 0px;
 }
@@ -2405,8 +2443,8 @@ header .content .logos li img:hover {
   padding: 18px 18px;
   background-color: #fff;
   border-radius: 0px 60px;
-  -webkit-box-shadow: 0px 20px 30px rgba(110, 180, 100, 0.1);
-          box-shadow: 0px 20px 30px rgba(110, 180, 100, 0.1);
+  -webkit-box-shadow: 0px 20px 30px rgba(110, 180, 100, 0.05);
+          box-shadow: 0px 20px 30px rgba(110, 180, 100, 0.05);
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -2636,6 +2674,8 @@ header .content .logos li img:hover {
      object-fit: contain;
   -o-object-position: center;
      object-position: center;
+  -webkit-transition: all .3s linear;
+  transition: all .3s linear;
 }
 
 .partner .box p {
@@ -2653,8 +2693,8 @@ header .content .logos li img:hover {
 }
 
 .partner .box:hover img {
-  -webkit-animation: tada .3s linear;
-          animation: tada .3s linear;
+  -webkit-transform: translateY(-10px);
+          transform: translateY(-10px);
 }
 
 .partner .box:hover p {
@@ -2781,6 +2821,8 @@ header .content .logos li img:hover {
   height: 80px;
   -o-object-fit: contain;
      object-fit: contain;
+  -webkit-transition: all .3s linear;
+  transition: all .3s linear;
   -o-object-position: center;
      object-position: center;
 }
@@ -2800,8 +2842,8 @@ header .content .logos li img:hover {
 }
 
 .sponser .box:hover img {
-  -webkit-animation: tada .3s linear;
-          animation: tada .3s linear;
+  -webkit-transform: translateY(-10px);
+          transform: translateY(-10px);
 }
 
 .sponser .box:hover p {
@@ -2982,9 +3024,20 @@ header .content .logos li img:hover {
 footer {
   width: 100%;
   padding: 183px 0px 60px;
-  background: #6EB464 url("../images/footer.webp") top right/cover no-repeat;
   position: relative;
+  background: linear-gradient(45deg, #6EB464, #105733);
   z-index: 9;
+}
+
+footer::after {
+  content: '';
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  background: url("../images/footer.webp") top right/cover no-repeat;
+  top: 0;
+  left: 0;
+  z-index: -1;
 }
 
 footer .content {
@@ -3040,10 +3093,6 @@ footer .content .footer-nav li a {
   font-size: 16px;
   font-weight: 700;
   line-height: 25px;
-}
-
-footer .content .footer-nav li a:hover {
-  color: #388B9F;
 }
 
 footer .content .footer-nav li:last-child {
@@ -3316,6 +3365,12 @@ footer .content .social-media li a:hover img {
   }
   .form-contain {
     padding: 50px 10px !important;
+  }
+  .time .content .border-shape:nth-child(2), .time .content .border-shape:last-child, .time .content .border-shape:nth-child(3) {
+    padding: 0px 10px !important;
+  }
+  .time .content .border-shape:nth-child(2)::after {
+    left: 25% !important;
   }
 }
 /*# sourceMappingURL=style.css.map */

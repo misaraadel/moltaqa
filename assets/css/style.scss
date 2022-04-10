@@ -101,7 +101,7 @@ header {
   background-color: #000;
   position: relative;
   overflow: hidden;
-  padding: 200px 0px 100px 0px;
+  padding: 200px 0px 140px 0px;
   z-index: 9;
 
   &::after {
@@ -507,7 +507,7 @@ header {
         position: absolute;
         width: 1px;
         height: 100%;
-        background-color: rgba($color: #fff, $alpha: 0.70);
+        background-color: rgba($color: #fff, $alpha: 0.10);
         top: 0%;
         left: -40px;
         z-index: -1;

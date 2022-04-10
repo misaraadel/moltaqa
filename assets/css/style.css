@@ -1520,7 +1520,7 @@ header {
   background-color: #000;
   position: relative;
   overflow: hidden;
-  padding: 200px 0px 100px 0px;
+  padding: 200px 0px 140px 0px;
   z-index: 9;
 }
 
@@ -2023,7 +2023,7 @@ header .content .logos li img:hover {
   position: absolute;
   width: 1px;
   height: 100%;
-  background-color: rgba(255, 255, 255, 0.7);
+  background-color: rgba(255, 255, 255, 0.1);
   top: 0%;
   left: -40px;
   z-index: -1;
